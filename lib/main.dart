@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:jinggle_minggle/views/home_page.dart';
 import 'package:get/get.dart';
+import 'package:jinggle_minggle/views/home_screen.dart';
+import 'package:jinggle_minggle/views/onborading/on_borading_screens.dart';
 
 void main() {
   runApp(const MyApp());
@@ -15,12 +16,9 @@ class MyApp extends StatelessWidget {
     return GetMaterialApp(
       title: 'Jinggle Minggle',
       theme: ThemeData(
-        
         primarySwatch: Colors.blue,
       ),
-      home: const HomeScreen(),
+      home: const OnBoardingScreens(),
     );
   }
 }
-
-
